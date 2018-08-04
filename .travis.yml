@@ -1,0 +1,6 @@
+language: csharp
+dotnet: 2.0
+script:
+  - dotnet restore
+  - dotnet build
+  - dotnet test ./test/OpenSourceDemo.Test
