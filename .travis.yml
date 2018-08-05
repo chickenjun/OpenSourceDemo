@@ -3,4 +3,4 @@ dotnet: 2.0
 script:
   - dotnet restore
   - msbuild OpenSourceDemo.sln
-  - dotnet test ./test/OpenSourceDemo.Test
+  - dotnet test --no-build ./test/OpenSourceDemo.Test
