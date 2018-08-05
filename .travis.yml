@@ -3,4 +3,5 @@ dotnet: 2.0
 script:
   - dotnet restore
   - msbuild OpenSourceDemo.sln
-  - dotnet test --no-build ./test/OpenSourceDemo.Test
+  - dotnet test --no-build -f netcoreapp2.0 --logger "trx;LogFileName=$TRAVIS_BUILD_DIR/TestResults.trx" ./test/OpenSourceDemo.Test
+
